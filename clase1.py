@@ -32,6 +32,14 @@ numeros[5]= 0
 print(numeros)
 # Cine: inserta, elimina y ordena
 # Parte de peliculas. Añade "El Padrino", inserta "Memento" en el índice 2 (tercera posición), elimina "Gladiator" con remove() y guarda la última película usando pop() en ultima. Ordena alfabéticamente, guarda una copia en ordenadas y vacía peliculas con clear(). En un comentario explica cómo usar pop() para otro índice.
+peliculas = ["Inception", "The Matrix", "Interstellar", "Gladiator"]
+peliculas.append("El Padrino")
+peliculas.insert(2, "Memento")
+peliculas.remove("Gladiator")
+ultima = peliculas.pop()
+ordenadas = sorted(peliculas)
+peliculas.clear()
+ordenadas.append(ultima)
 
 culpable: bool = True
 if culpable:
